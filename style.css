@@ -1208,3 +1208,39 @@ body{
   z-index:5;
 }
 
+.footer-location{
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  gap:10px;
+  margin-top:20px;
+  color:#ccc;
+  font-size:16px;
+}
+
+.footer-location i{
+  color:#00bfff;
+  font-size:20px;
+
+  animation:
+  locationBounce 2s infinite,
+  glowPulse 2s infinite;
+}
+
+@keyframes glowPulse{
+
+  0%{
+    text-shadow:0 0 0px #00bfff;
+  }
+
+  50%{
+    text-shadow:
+    0 0 10px #00bfff,
+    0 0 20px #00bfff;
+  }
+
+  100%{
+    text-shadow:0 0 0px #00bfff;
+  }
+
+}
